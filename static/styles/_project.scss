@@ -945,6 +945,7 @@ button {
     margin: auto;
     &.active {
       display: inherit;
+      text-align: center;
     }
   }
 }

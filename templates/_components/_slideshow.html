@@ -1,9 +1,9 @@
-{% macro info(gallery_num = 'num', photo_num = 'num', img_location='img_url', class='active', caption='This is a caption', photographer='Author author') -%}
+{% macro info(gallery_num = 'num', photo_num="", img_id = 'num', class='', caption='') -%}
 
-  <div class="photoG{{ gallery_num }} {{ class }}" id="photoG{{ gallery_num }}{{ photo_num }}"><img src="{{ img_location }}">
+  <div class="photoG{{ gallery_num }} {{ class }}" id="photoG{{ gallery_num }}{{ photo_num }}"><img src="http://ww1.hdnux.com/photos/51/21/44/{{ img_id }}/5/0x500.jpg">
     {{img_url}}
     <div class="caption">{{ caption }}
-      <span class="byline">Photo: {{ photographer }}, The Chronicle</span>
+      <span class="byline">Photo: Michael Macor, The Chronicle</span>
     </div>
   </div>
 
