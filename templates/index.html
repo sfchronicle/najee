@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block title %}{{title}}{% endblock %}
+
+{% block head %}
+{% include '_components/_social.html' %}
+{% endblock %}
+
+{% block hearst_title %}Overview{% endblock %}
+
+{% block content %}
+<main class="container">
+
+	{% include '_components/_header.html' %}
+
+	<div class="title-container">
+		<div class="background-img overview">
+		    <div class="dim"></div>
+			<div class="over-img">
+				<h1 class="title long">The Najee Harris Chronicles</h1>
+				<p class="deck">A season with nation’s No. 1 recruit</p>
+				<p class="author">By <a href="mailto:rkroichick@sfchronicle.com">Ron Kroichick</a></p>
+			</div>
+		</div>
+	</div>
+
+	<p class="caption landing">Antioch High School star football player Najee Harris after practice in Antioch, California, on Tues. Aug. 9, 2016.<span class="byline"> Michael Maccor, The Chronicle</span></p>
+	
+	{% include '_assets/chapterone.html' %}
+	{% include '_assets/video-reel.html' %}
+
+
+	<!-- <div class="dont-miss">
+		<a href="{{ url_for('index') }}">
+			<button>Next story</button>
+			<div class="story chaptertwo">
+				<div class="next-story">
+					<p>For most hosts, rental rules mean little</p>
+				</div>
+				<div class="dim"></div>
+			</div>
+		</a>
+	</div> -->
+
+	{% include '_components/_footer.html' %}
+
+</main>
+{% endblock %}
+
+{% block javascript %}
+
+<script type="text/javascript">
+
+  $(document).ready(function() {
+		App.init();
+	});
+
+</script>
+
+{% endblock %}

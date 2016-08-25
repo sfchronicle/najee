@@ -1,0 +1,15 @@
+*.db
+*.pyc
+.DS_Store
+migrations/
+node_modules/
+bower_components/
+*.css
+*.css.map
+main.*.js
+build/
+.sass-cache/
+.webassets-cache/
+local_settings.py
+*.BridgeSort
+static/styles/main.css

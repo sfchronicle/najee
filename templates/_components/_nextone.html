@@ -1,0 +1,10 @@
+{% macro story(title = '', url = '', img_url='') -%}
+<a href="{{url}}">
+	<button>Next story</button>
+	<div class="story" style="background-image:url('{{img_url}}')">
+		<div class="next-story">{{title}}</div>
+		<div class="dim"></div>
+	</div>
+</a>
+
+{%- endmacro %}
