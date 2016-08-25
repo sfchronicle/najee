@@ -1086,3 +1086,54 @@ td {
   max-width:800px;
   margin:1em auto;
 }
+
+.college-box {
+  width: 70%;
+  margin: 30px auto;
+  overflow: auto;
+  text-align: center;
+
+  @media #{$tablet} {
+    width: 85%;
+  }
+
+  @media #{$mobile} {
+    width: 95%;
+  }
+
+}
+
+.college-hed {
+  font-family: AntennaRegular;
+  text-align: center;
+}
+
+.college-chatter {
+  font-family: AntennaExtraLight;
+  text-align: center;
+  font-size: 18px;
+  border-bottom: 1px solid black;
+}
+
+.college {
+  width: auto;
+  font-family: AntennaExtraLight;
+  font-size: 18px;
+  padding: 6px 8px;
+  text-align: center;
+  margin: 3px 2px;
+  background-color: white;
+
+  @media #{$tablet} {
+    font-size: 15px;
+  }
+
+  @media #{$mobile} {
+    font-size: 13px;
+  }
+
+}
+
+button {
+  cursor: default !important;
+}
