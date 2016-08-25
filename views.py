@@ -10,7 +10,7 @@ app.config['SITE_PATH'] = "2016/najee-harris"
 app.config['PROJ_TITLE'] = "The Najee Harris Chronicles"
 
 # Project Hashtag
-app.config['HASHTAG'] = ''
+app.config['HASHTAG'] = 'najeeharris'
 
 """
 slug completes:
@@ -37,6 +37,6 @@ twitter_text:
 @app.route('/')
 def index():
     return render_template('index.html',
-    	title="As city lowers boom, Airbnb and rivals thrive",
-    	description="Special report: Data on Airbnb shows that visitors continue to flock to the rentals - often in defiance of city requirements to register these impromptu inns.",
-    	twitter_text="Airbnb, rivals flourish in SF amid regulatory crackdown.")
+    	title="Najee Harris' life as nation's No. 1 recruit",
+    	description="The Antioch High running back enters his senior year widely regarded as the nation's top recruit, earning him a slice of celebrity in our football-obsessed culture.",
+    	twitter_text="The Najee Chronicles: Life as nation's No. 1 recruit.")
