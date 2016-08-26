@@ -1152,18 +1152,11 @@ table {
 }
 
 .schedulebox {
-  max-width: 380px;
-  width: 100%;
-  float: left;
-
-  margin: 1em 1.5em 0.5em 5.5em;
-
-  @media (max-width: 1000px) {
-    max-width: 600px;
-    float: none;
-    margin: 2em auto;
-    width: 96%;
-  }
+    max-width: 550px;
+    width: 100%;
+    text-align: center;
+    margin: 3em auto;
+    padding: 0 1em;
 }
 
 th, td {
