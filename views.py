@@ -7,7 +7,7 @@ from models import *
 app.config['SITE_PATH'] = "2016/najee-harris"
 
 # Project Title
-app.config['PROJ_TITLE'] = "The Najee Harris Chronicles"
+app.config['PROJ_TITLE'] = "The Najee Chronicles"
 
 # Project Hashtag
 app.config['HASHTAG'] = 'najeeharris'
