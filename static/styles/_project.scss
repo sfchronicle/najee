@@ -773,7 +773,7 @@ footer {
     margin: 0 auto;
 
     p{
-      max-width: 500px;
+      max-width: 750px;
     }
 
     @media #{$mobile} {
@@ -1204,9 +1204,4 @@ th:nth-child(1) {
       display: none;
     }
   }
-}
-
-.chaptertwo{
-  background-image:url('http://ww1.hdnux.com/photos/51/21/44/10827786/5/2000x2000.jpg');
-  background-position:bottom;
 }

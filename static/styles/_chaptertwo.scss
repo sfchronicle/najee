@@ -1,0 +1,25 @@
+#chaptertwo {
+  background-image: url("http://ww1.hdnux.com/photos/51/21/44/10883289/5/2000x2000.jpg");
+  background-position: top center;
+
+  .over-img{
+  	right:0;
+  	left:0;
+    bottom:12%;
+
+  	p{
+  	  text-align:center;
+  	  margin: 0 auto 10px;
+	  max-width:500px;
+  	}
+  }
+
+  .title{
+	text-align: center;
+  }
+
+  .deck {
+    line-height:1.2;
+  }
+
+}
