@@ -41,10 +41,10 @@ def index():
     	description="The Antioch High running back enters his senior year widely regarded as the nation's top recruit, earning him a slice of celebrity in our football-obsessed culture.",
     	twitter_text="The Najee Chronicles: Life as nation's No. 1 recruit.")
 
-@app.route('/chaptertwo/')
+@app.route('/teammates/')
 def chaptertwo():
     return render_template('two.html',
-    	slug="team-player",
+    	slug="teammates",
     	title="Najee Harris' life as nation's No. 1 recruit",
     	description="The Antioch High running back enters his senior year widely regarded as the nation's top recruit, earning him a slice of celebrity in our football-obsessed culture.",
     	twitter_text="The Najee Chronicles: Life as nation's No. 1 recruit.")
