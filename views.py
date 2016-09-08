@@ -45,6 +45,6 @@ def index():
 def chaptertwo():
     return render_template('two.html',
     	slug="teammates",
-    	title="Najee Harris' life as nation's No. 1 recruit",
-    	description="The Antioch High running back enters his senior year widely regarded as the nation's top recruit, earning him a slice of celebrity in our football-obsessed culture.",
-    	twitter_text="The Najee Chronicles: Life as nation's No. 1 recruit.")
+    	title="Najee Harris excels as team-first star",
+    	description="The nation's No. 1 college football recruit remains connected to his teammates even as an injury threatens to derail his senior season.",
+    	twitter_text="Najee Harris, nation's No. 1 college football recruit, excels as team-first star.")
