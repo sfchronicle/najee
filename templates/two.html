@@ -30,17 +30,17 @@
 	{% include '_assets/chaptertwo.html' %}
 	
 
-	<!-- <div class="dont-miss">
-		<a href="">
-			<button>Game one</button>
-			<div class="story chaptertwo">
+	<div class="dont-miss">
+		<a href="{{ url_for('index') }}">
+			<button>NAJEE CHRONICLES</button>
+			<div class="story overview" style="background-position:center">
 				<div class="next-story">
-					<p>Read about Najee Harris' 2016 debut</p>
+					<p style="max-width:600px;">Chasing Najee Harris, the nation’s No. 1 recruit</p>
 				</div>
 				<div class="dim"></div>
 			</div>
 		</a>
-	</div> -->
+	</div>
 
 	<div class="max">
 		<hr>
@@ -62,9 +62,8 @@
 				</div>
 			</div>
 			<div class="group">
-				<p>Interactive producers</p>
+				<p>Interactive Producer</p>
 				{{ credit.info('Lucio Villa', 'lvilla', 'luciovilla' ) }}
-				{{ credit.info('Benjamin Din', 'bdin', 'benjamindin' ) }}
 			</div>
 		</div>
 	</div>
