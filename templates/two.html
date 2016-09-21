@@ -13,6 +13,7 @@
 <main class="container">
 
 	{% include '_components/_header.html' %}
+	{% include '_components/_header-sticky.html' %}
 
 	<div class="title-container">
 		<div id="chaptertwo" class="background-img">
@@ -32,13 +33,13 @@
 	
 
 	<div class="dont-miss">
-		<a href="{{ url_for('index') }}">
-			<button>NAJEE CHRONICLES</button>
-			<div class="story overview" style="background-position:center">
+		<a href="{{ url_for('opponent') }}">
+			<button>Chapter 3: The Oppenent</button>
+			<div id="chapterthree" class="story" style="background-position:center 77%">
 				<div class="next-story">
-					<p style="max-width:600px;">Chasing Najee Harris, the nation’s No. 1 recruit</p>
+					<p>Big stage, bright spotlight</p>
 				</div>
-				<div class="dim"></div>
+				<div class="dim" style="opacity:0.4;"></div>
 			</div>
 		</a>
 	</div>
@@ -46,25 +47,25 @@
 	<div class="max">
 		<hr>
 		<div class="credits">
-			{% import '_components/_credits.html' as credit %}
-			<!-- Variables are name, email slug and twitter handle -->
 			<div class="group">
 				<p>Reporter</p>
-				{{ credit.info('Ron Kroichick', 'rkroichick', 'ronkroichick' ) }}
+				<div class="entry"><a href="mailto:rkroichick@sfchronicle.com">Ron Kroichick</a>
+				</div>
 			</div>
 			<div class="group">
 				<p>Photographer</p>
-				{{ credit.info('Michael Macor', 'mmacor', 'michaelmacor' ) }}
+				<div class="entry"><a href="mailto:cgonzalez@sfchronicle.com">Michael Macor</a>
+				</div>
 			</div>
 			<div class="group">
 				<p>Graphic Designer</p>
-				<div class="entry">John Blanchard &bull;
-					<a href="mailto:jblanchard@sfchronicle.com">jblanchard@sfchronicle.com</a>
+				<div class="entry"><a href="mailto:jblanchard@sfchronicle.com">John Blanchard</a>
 				</div>
 			</div>
 			<div class="group">
 				<p>Interactive Producer</p>
-				{{ credit.info('Lucio Villa', 'lvilla', 'luciovilla' ) }}
+				<div class="entry"><a href="mailto:lvilla@sfchronicle.com">Lucio Villa</a>
+				</div>
 			</div>
 		</div>
 	</div>

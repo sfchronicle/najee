@@ -12,6 +12,7 @@
 <main class="container">
 
 	{% include '_components/_header.html' %}
+	{% include '_components/_header-sticky.html' %}
 
 	<div class="title-container">
 		<div class="background-img overview">
@@ -19,11 +20,11 @@
 			<div class="over-img">
 				<h1 class="title long">The Najee Chronicles</h1>
 				<p class="author">Aug. 28, 2016 | By <a href="mailto:rkroichick@sfchronicle.com">Ron Kroichick</a></p>
-				<p class="deck">Antioch High School senior running back Najee Harris is the consensus No. 1 college football recruit in the country. Follow “The Najee Chronicles” here:</p>
+				<p class="deck">Antioch High School's Najee Harris is the No. 1 college football recruit in the country. Follow his story in an exclusive Chronicle series:</p>
 				<div class="button-group">
-					<button id="ch1">Chapter 1:<br>Najee Harris</button><br>
-					<button>Chapter 2:<br>Team-first star</button><br>
-					<button>Chapter 3:<br>De La Salle</button>
+					<button id="ch1">Chapter 1:<br>The recruit</button>
+					<a href="{{ url_for('chaptertwo') }}"><button>Chapter 2:<br>The team</button></a>
+					<a href="{{ url_for('opponent') }}"><button>Chapter 3:<br>The opponent</button></a>
 				</div>
 				
 			</div>
@@ -39,7 +40,7 @@
 
 	<div class="dont-miss">
 		<a href="{{ url_for('chaptertwo') }}">
-			<button>Part 2: Team-first star</button>
+			<button>Chapter 2: The Team</button>
 			<div class="story chaptertwo">
 				<div class="next-story">
 					<p>Antioch High's Harris, nation's No. 1 recruit, excels as teammate</p>
@@ -52,26 +53,27 @@
 	<div class="max">
 		<hr>
 		<div class="credits">
-			{% import '_components/_credits.html' as credit %}
-			<!-- Variables are name, email slug and twitter handle -->
 			<div class="group">
 				<p>Reporter</p>
-				{{ credit.info('Ron Kroichick', 'rkroichick', 'ronkroichick' ) }}
-			</div>
-			<div class="group">
-				<p>Photographer</p>
-				{{ credit.info('Michael Macor', 'mmacor', 'michaelmacor' ) }}
-			</div>
-			<div class="group">
-				<p>Graphic Designer</p>
-				<div class="entry">John Blanchard &bull;
-					<a href="mailto:jblanchard@sfchronicle.com">jblanchard@sfchronicle.com</a>
+				<div class="entry"><a href="mailto:rkroichick@sfchronicle.com">Ron Kroichick</a>
 				</div>
 			</div>
 			<div class="group">
-				<p>Interactive producers</p>
-				{{ credit.info('Lucio Villa', 'lvilla', 'luciovilla' ) }}
-				{{ credit.info('Benjamin Din', 'bdin', 'benjamindin' ) }}
+				<p>Photographer</p>
+				<div class="entry"><a href="mailto:cgonzalez@sfchronicle.com">Michael Macor</a>
+				</div>
+			</div>
+			<div class="group">
+				<p>Graphic Designer</p>
+				<div class="entry"><a href="mailto:jblanchard@sfchronicle.com">John Blanchard</a>
+				</div>
+			</div>
+			<div class="group">
+				<p>Interactive Producers</p>
+				<div class="entry"><a href="mailto:lvilla@sfchronicle.com">Lucio Villa</a>
+				</div>
+				<div class="entry"><a href="mailto:benjamin.din@gmail.com">Benjamin Din</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -128,7 +130,7 @@
 	$('#ch1').click(function () {
     	var divID = '#' + this.id;
     	$('html, body').animate({
-        	scrollTop: $(divID).offset().top
+        	scrollTop: $(divID).offset().top + 190
     	}, 500);
 	});
 

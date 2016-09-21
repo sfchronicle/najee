@@ -322,9 +322,10 @@
         padding: 10px;
         color: black;
         margin: 0 0.25em 0.25em 0;
-        text-transform: uppercase;
         box-shadow: 3px 3px 3px #000000;
         border-radius: 2px;
+        text-align: left;
+        line-height:1.3;
 
         &:hover{
             background:#fff;

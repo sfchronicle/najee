@@ -49,10 +49,10 @@ def chaptertwo():
     	description="The Najee Chronicles: Najee Harris, the nation's No. 1 recruit, remains connected to his teammates even as an injury could derail his senior season at Antioch High.",
     	twitter_text="Najee Harris, nation's No. 1 college football recruit, excels as team-first star.")
 
-@app.route('/big-stage/')
-def bigstage():
+@app.route('/the-opponent/')
+def opponent():
     return render_template('three.html',
-    	slug="big-stage",
+    	slug="the-opponent",
     	title=" ",
     	description=" ",
     	twitter_text=" ")

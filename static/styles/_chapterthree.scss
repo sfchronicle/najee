@@ -4,7 +4,7 @@
 
   .over-img{
   	left:0;
-    top:6%;
+    top:0;
 
   	p{
   	  text-align:left;
@@ -19,6 +19,10 @@
 
   .deck {
     line-height:1.2;
+  }
+
+  .dim{
+    opacity:0.1;
   }
 
 }

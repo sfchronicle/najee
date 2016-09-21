@@ -50,3 +50,18 @@ App = {
   }
   window.__twitterIntentHandler = true;
 }());
+
+
+
+var myID = document.getElementById("sticky-nav");
+
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 800) {
+        myID.className = "fixed show"
+    } else {
+        myID.className = "fixed hide"
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);

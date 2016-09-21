@@ -13,6 +13,7 @@
 <main class="container">
 
 	{% include '_components/_header.html' %}
+	{% include '_components/_header-sticky.html' %}
 
 	<div class="title-container">
 		<div id="chapterthree" class="background-img">
@@ -26,14 +27,14 @@
 		</div>
 	</div>
 
-	<p class="caption landing">Najee Harris (center) and the Antioch Panthers ride a bus to the South Bay to take on the Milpitas Trojans on Sept. 2.<span class="byline"> Michael Macor, The Chronicle</span></p>
+	<p class="caption landing">De La Salle-Concord head coach Justin Alumbaugh observes players during defensive drills a week before the Spartans take on Antioch High and star running back Najee Harris.<span class="byline"> Carlos Avila Gonzalez, The Chronicle</span></p>
 
 	{% include '_assets/chapterthree.html' %}
 	
 
 	<div class="dont-miss">
 		<a href="{{ url_for('index') }}">
-			<button>NAJEE CHRONICLES</button>
+			<button>CATCH UP ON THE NAJEE CHRONICLES</button>
 			<div class="story overview" style="background-position:center">
 				<div class="next-story">
 					<p style="max-width:600px;">Chasing Najee Harris, the nation’s No. 1 recruit</p>
@@ -46,25 +47,20 @@
 	<div class="max">
 		<hr>
 		<div class="credits">
-			{% import '_components/_credits.html' as credit %}
-			<!-- Variables are name, email slug and twitter handle -->
 			<div class="group">
 				<p>Reporter</p>
-				{{ credit.info('Ron Kroichick', 'rkroichick', 'ronkroichick' ) }}
+				<div class="entry"><a href="mailto:rkroichick@sfchronicle.com">Ron Kroichick</a>
+				</div>
 			</div>
 			<div class="group">
 				<p>Photographer</p>
-				{{ credit.info('Michael Macor', 'mmacor', 'michaelmacor' ) }}
-			</div>
-			<div class="group">
-				<p>Graphic Designer</p>
-				<div class="entry">John Blanchard &bull;
-					<a href="mailto:jblanchard@sfchronicle.com">jblanchard@sfchronicle.com</a>
+				<div class="entry"><a href="mailto:cgonzalez@sfchronicle.com">Carlos Avila Gonzalez</a>
 				</div>
 			</div>
 			<div class="group">
 				<p>Interactive Producer</p>
-				{{ credit.info('Lucio Villa', 'lvilla', 'luciovilla' ) }}
+				<div class="entry"><a href="mailto:lvilla@sfchronicle.com">Lucio Villa</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -85,7 +81,7 @@
 
   // for photo gallery
 	var gallery1_idx = 0;
-	var gallery_len = 8;
+	var gallery_len = 6;
 	// set up clicking to update map interactive on mobile
 	document.getElementById("scrollRight-Gallery1").addEventListener("click", function() {
 	  gallery1_idx = gallery1_idx+1;
