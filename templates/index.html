@@ -18,8 +18,14 @@
 		    <div class="dim"></div>
 			<div class="over-img">
 				<h1 class="title long">The Najee Chronicles</h1>
-				<p class="deck">Chasing Najee Harris, the nation’s No. 1 recruit</p>
-				<p class="author">By <a href="mailto:rkroichick@sfchronicle.com">Ron Kroichick</a></p>
+				<p class="author">Aug. 28, 2016 | By <a href="mailto:rkroichick@sfchronicle.com">Ron Kroichick</a></p>
+				<p class="deck">Antioch High School senior running back Najee Harris is the consensus No. 1 college football recruit in the country. Follow “The Najee Chronicles” here:</p>
+				<div class="button-group">
+					<button id="ch1">Chapter 1:<br>Najee Harris</button><br>
+					<button>Chapter 2:<br>Team-first star</button><br>
+					<button>Chapter 3:<br>De La Salle</button>
+				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -33,7 +39,7 @@
 
 	<div class="dont-miss">
 		<a href="{{ url_for('chaptertwo') }}">
-			<button>Team-first star</button>
+			<button>Part 2: Team-first star</button>
 			<div class="story chaptertwo">
 				<div class="next-story">
 					<p>Antioch High's Harris, nation's No. 1 recruit, excels as teammate</p>
@@ -117,6 +123,13 @@
 	  } else {
 	    $("#scrollLeft-Gallery1").removeClass("first");
 	  };
+	});
+
+	$('#ch1').click(function () {
+    	var divID = '#' + this.id;
+    	$('html, body').animate({
+        	scrollTop: $(divID).offset().top
+    	}, 500);
 	});
 
 
