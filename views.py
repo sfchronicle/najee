@@ -53,6 +53,6 @@ def chaptertwo():
 def opponent():
     return render_template('three.html',
     	slug="the-opponent",
-    	title=" ",
-    	description=" ",
-    	twitter_text=" ")
+    	title="Big stage, bright spotlight for nation's No. 1 recruit",
+    	description="The Najee Chronicles: Antioch High football star Najee Harris faces a stiff test against De La Salle, a program so prominent it has been the subject of a book and film.",
+    	twitter_text="Big stage, bright spotlight: Nation's No. 1 football recruit faces stiff competition.")
