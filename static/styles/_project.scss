@@ -1102,6 +1102,10 @@ td {
 #ch1-video{
   max-width:800px;
   margin:1em auto;
+
+  video{
+    width:100%;
+  }
 }
 
 .college-box, .colleges {

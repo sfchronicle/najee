@@ -1,0 +1,15 @@
+<div id="ch1-video">
+	<video autoplay loop id="looper"  class="video show-for-large-only" poster="{{ url_for('static', filename='video/still.jpg') }}">
+	  <source src="{{ url_for('static', filename='video/td.mp4') }}" type="video/mp4">
+	  Your browser does not support the <code>video</code> element.
+	</video>
+	<video  controls   class="video show-for-medium-only" poster="{{ url_for('static', filename='video/still.jpg') }}">
+	  <source src="{{ url_for('static', filename='video/td.mp4') }}" type="video/mp4">
+	  Your browser does not support the <code>video</code> element.
+	</video>
+	<video  controls   class="video show-for-small-only" poster="{{ url_for('static', filename='video/still.jpg') }}">
+	  <source src="{{ url_for('static', filename='video/td-small.mp4') }}" type="video/mp4">
+	  Your browser does not support the <code>video</code> element.
+	</video>
+	<p class="caption">Najee Harris runs for a touchdown against Milpitas High on Sept. 2.<span class="byline"> Video: Carlos Avila Gonzalez, The Chronicle</span></p>
+</div>
