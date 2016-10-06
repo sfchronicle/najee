@@ -23,6 +23,9 @@
       <a class="{%- if request.path == '/the-opponent/' %} active{% endif %}" href="{{ url_for('opponent') }}"><span class="show-for-medium">The Opponent</span><span class="hide-for-medium">3</span></a>
     </div>
 
+    <div class="links">
+      <a class="{%- if request.path == '/home-life/' %} active{% endif %}" href="{{ url_for('home') }}"><span class="show-for-medium">Home Life</span><span class="hide-for-medium">4</span></a>
+    </div>
 
     <div class="link social">
       <a id="mail-icon" title="Share via email" href="mailto:?subject={{title|urlencode}}&body={{description|urlencode}}%0A%0Ahttp%3A%2F%2Fprojects.sfchronicle.com%2F2016%2F{{config.PATH}}%2F{% if slug %}{{slug}}%2F{% endif %}">

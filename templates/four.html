@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 
-{% block title %}Najee Harris, nation's No. 1 football recruit, a team-first star{% endblock %}
+{% block title %}{{title|safe}}{% endblock %}
 {% block hearst_title %}{{title|safe}}{% endblock %}
 {% block hearst_class %}article{% endblock %}
-{% block hearst_date %}2016-09-09{% endblock %}
-{% block hearst_author %}Ron Kroichick, Lucio Villa, John Blanchard, Michael Macor{% endblock %}
+{% block hearst_date %}2016-10-03{% endblock %}
+{% block hearst_author %}Ron Kroichick, Lucio Villa, Michael Macor{% endblock %}
 
 
 {% block head %}
@@ -18,30 +18,30 @@
 	{% include '_components/_header-sticky.html' %}
 
 	<div class="title-container">
-		<div id="chaptertwo" class="background-img">
+		<div id="chapterfour" class="background-img">
 		    <div class="dim"></div>
 			<div class="over-img">
-				<h1 class="title long">Team-first star</h1>
-				<p class="author">Sept. 9, 2016 | By <a href="mailto:rkroichick@sfchronicle.com">Ron Kroichick</a></p>
-				<p class="deck"><span class="ch-text">The Najee Chronicles, Chapter 2:</span><br>Antioch High's Najee Harris, the nation's No. 1 football recruit, excels as a teammate</p>
+				<h1 class="title long">NO PLACE TO RUN</h1>
+				<p class="author">Oct. 7, 2016 | By <a href="mailto:rkroichick@sfchronicle.com">Ron Kroichick</a></p>
+				<p class="deck"><span class="ch-text">The Najee Chronicles, Chapter 4:</span><br>For America's top college football recruit, tackling life off the field isn’t easy</p>
 				
 			</div>
 		</div>
 	</div>
 
-	<p class="caption landing">Najee Harris (center) and the Antioch Panthers ride a bus to the South Bay to take on the Milpitas Trojans on Sept. 2.<span class="byline"> Michael Macor, The Chronicle</span></p>
+	<p class="caption landing">Antioch High School running back Najee Harris, the nation’s most coveted college football prospect, returns home from football practice. <span class="byline"> Michael Macor, The Chronicle</span></p>
 
-	{% include '_assets/chaptertwo.html' %}
+	{% include '_assets/chapterfour.html' %}
 	
 
 	<div class="dont-miss">
-		<a href="{{ url_for('opponent') }}">
-			<button>Chapter 3: The Opponent</button>
-			<div id="chapterthree" class="story" style="background-position:center 77%">
+		<a href="{{ url_for('index') }}">
+			<button>CATCH UP ON THE NAJEE CHRONICLES</button>
+			<div class="story overview" style="background-position:center">
 				<div class="next-story">
-					<p>Big stage, bright spotlight</p>
+					<p style="max-width:600px;">Chasing Najee Harris, the nation’s No. 1 recruit</p>
 				</div>
-				<div class="dim" style="opacity:0.4;"></div>
+				<div class="dim"></div>
 			</div>
 		</a>
 	</div>
@@ -57,11 +57,6 @@
 			<div class="group">
 				<p>Photographer</p>
 				<div class="entry"><a href="mailto:mmacor@sfchronicle.com">Michael Macor</a>
-				</div>
-			</div>
-			<div class="group">
-				<p>Graphic Designer</p>
-				<div class="entry"><a href="mailto:jblanchard@sfchronicle.com">John Blanchard</a>
 				</div>
 			</div>
 			<div class="group">
@@ -88,7 +83,7 @@
 
   // for photo gallery
 	var gallery1_idx = 0;
-	var gallery_len = 8;
+	var gallery_len = 10;
 	// set up clicking to update map interactive on mobile
 	document.getElementById("scrollRight-Gallery1").addEventListener("click", function() {
 	  gallery1_idx = gallery1_idx+1;
