@@ -61,6 +61,6 @@ def opponent():
 def home():
     return render_template('four.html',
         slug="home-life",
-        title=" ",
-        description="",
-        twitter_text=" ")
+        title="Nation's No. 1 recruit tackles anxiety off the field",
+        description="The Najee Chronicles: Even if he's the most coveted prep prospect in the country, Antioch High star Najee Harris deals with pressures that extend to his home life.",
+        twitter_text="No place to run: For America's top college football recruit, tackling life off the field isn't easy.")
