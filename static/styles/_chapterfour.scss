@@ -4,17 +4,19 @@
 
   .over-img{
   	left:0;
-    bottom:12%;
+    bottom:17%;
 
   	p{
   	  text-align:left;
   	  margin: 0 0 10px;
 	    max-width:440px;
+      text-shadow:1px 1px 0 #000;
   	}
   }
 
   .title{
 	text-align: left;
+  text-shadow: 1px 1px 0 #000;
   }
 
   .deck {
@@ -22,7 +24,7 @@
   }
 
   .dim{
-    opacity:0.5;
+    opacity:0.3;
   }
 
 }
