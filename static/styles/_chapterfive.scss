@@ -1,0 +1,170 @@
+#chapterfive{
+  background-image: url("http://ww1.hdnux.com/photos/51/21/44/11621971/5/2000x2000.jpg");
+  background-position: top center;
+
+  .over-img{
+  	left:0;
+    top:4%;
+
+  	p{
+  	  text-align:left;
+  	  margin: 0 0 10px;
+	    max-width:490px;
+      text-shadow:1px 1px 0 #000;
+  	}
+  }
+
+  .title{
+	text-align: left;
+  text-shadow: 1px 1px 0 #000;
+  }
+
+  .deck {
+    line-height:1.2;
+  }
+
+  .dim{
+    opacity:0.3;
+  }
+
+}
+
+i{
+  font-size: 0.9em;
+}
+
+.map-graphic{
+  max-width:900px;
+  width:100%;
+  margin:2em auto;
+  text-align:center;
+  font-family: $sans-serif-light;
+  padding: 0 10px;
+
+  p{
+   font-size:0.8em;
+   max-width:860px;
+   padding:0;
+
+   @media (max-width:900px){
+    font-size:0.65em;
+   }
+  }
+  .caption{
+  font-size:12px;
+  }
+
+  h2{
+    
+    @media (max-width:900px){
+    font-size:1em;
+    }
+  }
+}
+
+
+.img-container {
+  position: relative;
+  max-width: 900px;
+}
+
+    
+.tool {
+  position: absolute;
+  bottom: 20%;
+  right:25%;
+  display: none;
+  border: 1px solid #ccc;
+  max-width: 500px;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+}
+.tool h2 {
+  font-size: 20px;
+  font-family: Antenna, sans-serif;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.tool p {
+  text-align: left;
+  font-family: Antenna, sans-serif;
+  font-size: 16px;
+  width: 100% !important; 
+}
+
+.tool img {
+  width: 100%;
+}
+
+#map-img{
+    width: 100%;
+    @media (max-width: 500px){
+    display:none;
+    }
+}
+
+#map-img-mobile{
+  display:none;
+  @media(max-width: 500px){
+  display:block;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: 600;
+  font-family: Antenna, sans-serif;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 830px) {
+        
+  .tool  {
+    right: 0;
+    bottom:10%;
+    left: 0;
+    margin: 0 auto;
+    padding: 5%;
+    width: 95%;
+
+    td:nth-child(2){
+      text-align:right;
+    }
+  }
+
+  .close {
+    display: block;
+  }
+}
+
+.note{
+  p{
+  font-size: 12px;
+  padding: 2px;
+  margin-top: 5px;
+  font-family: AntennaExtraLight;
+  } 
+}
+
+.map-popup{
+  text-align:left;
+}
+
+
+.show-for-860{
+  @media (max-width:860px){
+  display:none;
+  }
+}
+
+.hide-for-860{
+  display:none;
+  @media (max-width:860px){
+  display:inline-block;
+  }
+}
+

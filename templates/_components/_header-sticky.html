@@ -8,23 +8,27 @@
     </a>
 
     <div class="link">
-      <a class="special-head home" href="{{ url_for('index') }}"><span class="show-for-medium">The </span>Najee Chronicles: </a>
+      <a class="special-head home" href="{{ url_for('index') }}"><span class="show-for-860">The </span>Najee Chronicles: </a>
     </div>
 
     <div class="links">
-      <a class="{%- if request.path == '/' %} active{% endif %}" href="{{ url_for('index') }}"><span class="show-for-medium">The Recruit</span><span class="hide-for-medium">1</span></a>
+      <a class="{%- if request.path == '/' %} active{% endif %}" href="{{ url_for('index') }}"><span class="show-for-860">The Player</span><span class="hide-for-860">1</span></a>
     </div>
 
     <div class="links">
-      <a class="{%- if request.path == '/teammates/' %} active{% endif %}" href="{{ url_for('chaptertwo') }}"><span class="show-for-medium">The Team</span><span class="hide-for-medium">2</span></a>
+      <a class="{%- if request.path == '/teammates/' %} active{% endif %}" href="{{ url_for('chaptertwo') }}"><span class="show-for-860">The Team</span><span class="hide-for-860">2</span></a>
     </div>
 
     <div class="links">
-      <a class="{%- if request.path == '/the-opponent/' %} active{% endif %}" href="{{ url_for('opponent') }}"><span class="show-for-medium">The Opponent</span><span class="hide-for-medium">3</span></a>
+      <a class="{%- if request.path == '/the-opponent/' %} active{% endif %}" href="{{ url_for('opponent') }}"><span class="show-for-860">The Opponent</span><span class="hide-for-860">3</span></a>
     </div>
 
     <div class="links">
-      <a class="{%- if request.path == '/home-life/' %} active{% endif %}" href="{{ url_for('home') }}"><span class="show-for-medium">Home Life</span><span class="hide-for-medium">4</span></a>
+      <a class="{%- if request.path == '/home-life/' %} active{% endif %}" href="{{ url_for('home') }}"><span class="show-for-860">Home Life</span><span class="hide-for-860">4</span></a>
+    </div>
+
+    <div class="links">
+      <a class="{%- if request.path == '/recruiting/' %} active{% endif %}" href="{{ url_for('recruit') }}"><span class="show-for-860">Recruiting</span><span class="hide-for-860">5</span></a>
     </div>
 
     <div class="link social">
