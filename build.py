@@ -8,7 +8,7 @@ BUILD_DIR = os.path.join(os.path.realpath(os.path.dirname(__file__)), 'build')
 ROOT_URL = '//extras.sfgate.com'
 
 # CHANGE THE FOLDER SLUG TO NEW PROJECT 
-TEST_PROJECT_NAME = 'test-proj/najee'
+TEST_PROJECT_NAME = 'test-proj/najee-5'
 PROJECT_NAME = '2016/najee-harris'
 
 

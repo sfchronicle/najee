@@ -12,6 +12,11 @@
 	    max-width:490px;
       text-shadow:1px 1px 0 #000;
   	}
+
+    @media (max-width:700px){
+      top:inherit;
+      bottom:13%;
+    }
   }
 
   .title{
@@ -21,10 +26,17 @@
 
   .deck {
     line-height:1.2;
+    @media #{$mobile} {
+      font-size:0.75em;
+    }
   }
 
   .dim{
     opacity:0.3;
+  }
+
+  @media (max-width:700px){
+    background-position: 66% center;
   }
 
 }
@@ -71,7 +83,7 @@ i{
     
 .tool {
   position: absolute;
-  bottom: 20%;
+  bottom: 10%;
   right:25%;
   display: none;
   border: 1px solid #ccc;
@@ -125,7 +137,7 @@ i{
         
   .tool  {
     right: 0;
-    bottom:10%;
+    bottom:0;
     left: 0;
     margin: 0 auto;
     padding: 5%;
@@ -168,3 +180,6 @@ i{
   }
 }
 
+.helmet{
+  max-width:90px;
+}
