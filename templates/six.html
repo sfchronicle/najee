@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+
+{% block title %}The Najee Chronicles: Top college football recruit Najee Harris' life gets more intense as decision day nears{% endblock %}
+{% block hearst_title %}{{title|safe}}{% endblock %}
+{% block hearst_class %}article{% endblock %}
+{% block hearst_date %}2016-11-11{% endblock %}
+{% block hearst_author %}Ron Kroichick, Lucio Villa, Michael Macor{% endblock %}
+
+
+{% block head %}
+{% include '_components/_social.html' %}
+{% endblock %}
+
+{% block content %}
+<main class="container">
+
+	{% include '_components/_header.html' %}
+	{% include '_components/_header-sticky.html' %}
+
+	<div class="title-container">
+		<div id="chaptersix" class="background-img">
+		    <div class="dim"></div>
+			<div class="over-img">
+				<h1 class="title long">Under pressure</h1>
+				<p class="author">Nov. 11, 2016 | By <a href="mailto:rkroichick@sfchronicle.com">Ron Kroichick</a></p>
+				<p class="deck"><span class="ch-text">The Najee Chronicles, Chapter 6:</span><br>As decision day nears for Najee Harris, America’s No. 1 football recruit, life becomes more stressful on and off the field</p>
+				
+			</div>
+		</div>
+	</div>
+
+	<p class="caption landing"> <span class="byline"> Michael Macor, The Chronicle</span></p>
+
+	{% include '_assets/chaptersix.html' %}
+	
+
+	<div class="dont-miss">
+		<a href="{{ url_for('index') }}">
+			<button>CATCH UP ON THE NAJEE CHRONICLES</button>
+			<div class="story overview" style="background-position:center">
+				<div class="next-story">
+					<p style="max-width:600px;">Chasing Najee Harris, the nation’s No. 1 recruit</p>
+				</div>
+				<div class="dim"></div>
+			</div>
+		</a>
+	</div>
+
+	<div class="max">
+		<hr>
+		<div class="credits">
+			<div class="group">
+				<p>Reporter</p>
+				<div class="entry"><a href="mailto:rkroichick@sfchronicle.com">Ron Kroichick</a>
+				</div>
+			</div>
+			<div class="group">
+				<p>Photographer</p>
+				<div class="entry"><a href="mailto:mmacor@sfchronicle.com">Michael Macor</a>
+				</div>
+			</div>
+			<div class="group">
+				<p>Interactive Producer</p>
+				<div class="entry"><a href="mailto:lvilla@sfchronicle.com">Lucio Villa</a>
+				</div>
+			</div>
+			<div class="group">
+				<p>Graphic Designer</p>
+				<div class="entry"><a href="mailto:ttrumbull@sfchronicle.com">Jon Blanchard</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	{% include '_components/_footer.html' %}
+
+
+</main>
+{% endblock %}
+
+{% block javascript %}
+<script src="http://projects.sfchronicle.com/shared/js/jquery.rwdImageMaps.min.js"></script>
+
+<script type="text/javascript">
+
+  $(document).ready(function() {
+		App.init();
+	});
+
+  // for photo gallery
+	var gallery1_idx = 0;
+	var gallery_len = 10;
+	// set up clicking to update map interactive on mobile
+	// document.getElementById("scrollRight-Gallery1").addEventListener("click", function() {
+	//   gallery1_idx = gallery1_idx+1;
+	//   $(".photoG1").removeClass("active");
+	//   $("#photoG1"+gallery1_idx).addClass("active");
+	//   if (gallery1_idx == (gallery_len-1)) {
+	//     $("#scrollRight-Gallery1").addClass("last");
+	//   } else {
+	//     $("#scrollRight-Gallery1").removeClass("last");
+	//   };
+	//   if (gallery1_idx == 0) {
+	//     $("#scrollLeft-Gallery1").addClass("first");
+	//   } else {
+	//     $("#scrollLeft-Gallery1").removeClass("first");
+	//   };
+	// });
+	// document.getElementById("scrollLeft-Gallery1").addEventListener("click", function() {
+	//   gallery1_idx = gallery1_idx-1;
+	//   $(".photoG1").removeClass("active");
+	//   $("#photoG1"+gallery1_idx).addClass("active");
+	//   if (gallery1_idx == (gallery_len-1)) {
+	//     $("#scrollRight-Gallery1").addClass("last");
+	//   } else {
+	//     $("#scrollRight-Gallery1").removeClass("last");
+	//   };
+	//   if (gallery1_idx == 0) {
+	//     $("#scrollLeft-Gallery1").addClass("first");
+	//   } else {
+	//     $("#scrollLeft-Gallery1").removeClass("first");
+	//   };
+	// });
+
+	$(document).ready(function(e) {
+			$('img[usemap]').rwdImageMaps();
+		});
+
+
+    // JavaScript function that toggles containers
+
+		function showonlyone(thechosenone) {
+			$('.tool').each(function(index) {
+		    	if ($(this).attr("id") == thechosenone) {
+		        	$(this).show();
+					console.log('click');
+		      	}
+		      	else {
+		        	$(this).hide();
+		      	}
+			});
+		}
+
+		$(".close").click(function () {
+		    $(".tool").css("display", "none");
+		});
+
+
+</script>
+
+{% endblock %}

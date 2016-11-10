@@ -166,20 +166,6 @@ i{
   text-align:left;
 }
 
-
-.show-for-860{
-  @media (max-width:860px){
-  display:none;
-  }
-}
-
-.hide-for-860{
-  display:none;
-  @media (max-width:860px){
-  display:inline-block;
-  }
-}
-
 .helmet{
   max-width:90px;
 }

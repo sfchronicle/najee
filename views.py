@@ -72,3 +72,11 @@ def recruit():
         title="Top schools ramp up recruiting of No. 1 football prospect",
         description="The Najee Chronicles: After unofficially committing to play for Alabama, Antioch's Najee Harris is still undecided - and the competition to land him grows more intense every week.",
         twitter_text="Top schools ramp up recruiting of Antioch's Najee Harris, the nation's No. 1 football prospect")
+
+@app.route('/the-pressure/')
+def six():
+    return render_template('six.html',
+        slug="the-pressure",
+        title="",
+        description="",
+        twitter_text="")

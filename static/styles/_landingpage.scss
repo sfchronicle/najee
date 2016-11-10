@@ -306,6 +306,7 @@
 }
 
 .button-group{
+    max-width: 450px;
     font-size:15px;
     padding-left:15px;
     margin-top:1em;
@@ -326,6 +327,7 @@
         border-radius: 2px;
         text-align: left;
         line-height:1.3;
+        min-width:130px;
 
         &:hover{
             background:#fff;
@@ -335,4 +337,7 @@
 
 .deck {
     max-width:560px;
+}
+.top-margin{
+  margin-top: 5px !important;
 }

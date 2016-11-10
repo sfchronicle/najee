@@ -31,6 +31,10 @@
       <a class="{%- if request.path == '/recruiting/' %} active{% endif %}" href="{{ url_for('recruit') }}"><span class="show-for-860">Recruiting</span><span class="hide-for-860">5</span></a>
     </div>
 
+    <div class="links">
+      <a class="{%- if request.path == '/the-pressure/' %} active{% endif %}" href="{{ url_for('six') }}"><span class="show-for-860">The Pressure</span><span class="hide-for-860">6</span></a>
+    </div>
+
     <div class="link social">
       <a id="mail-icon" title="Share via email" href="mailto:?subject={{title|urlencode}}&body={{description|urlencode}}%0A%0Ahttp%3A%2F%2Fprojects.sfchronicle.com%2F{{config.SITE_PATH}}%2F{% if slug %}{{slug}}%2F{% endif %}">
         <i class="fa fa-envelope" aria-hidden="true"></i>

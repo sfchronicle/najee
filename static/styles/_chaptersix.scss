@@ -1,0 +1,61 @@
+#chaptersix{
+  background-image: url("http://ww1.hdnux.com/photos/51/21/44/11781042/5/2000x2000.jpg");
+  background-position: top center;
+
+  .over-img{
+  	right:10%;
+    top:4%;
+    left:inherit;
+
+    @media (max-width:1024px) {
+      right:inherit;
+      left:1%;
+      top:inherit;
+      bottom:3%;
+    }
+
+
+
+  	p{
+  	  text-align:left;
+  	  margin: 0 0 10px;
+	    max-width:500px;
+      text-shadow:1px 1px 0 #000;
+  	}
+
+    @media (max-width:700px){
+      top:inherit;
+    }
+  }
+
+  .title{
+	text-align: left;
+  text-shadow: 1px 1px 0 #000;
+  }
+
+  .deck {
+    line-height:1.2;
+    @media #{$mobile} {
+      font-size:0.75em;
+    }
+  }
+
+  .dim{
+    opacity:0.4;
+  }
+
+  @media (max-width:700px){
+    background-position: 36% center;
+  }
+
+  &.background-img{
+
+    @media (max-width:1024px){
+      height:730px; 
+    }
+    @media  #{$mobile}{
+      height:530px; 
+    }
+  }
+
+}

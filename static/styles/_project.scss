@@ -339,6 +339,9 @@ header {
       img {
        vertical-align: text-bottom;
       }
+      @media #{$mobile} {
+       display: none;
+     }
   }
   .mobile-logo {
     display: none;
@@ -412,6 +415,7 @@ header {
       margin-right: 0;
     }
   }
+
 
 }
 
@@ -1232,9 +1236,26 @@ th:nth-child(1) {
   .active{
     border-bottom: 2px solid #ccc;
   }
+  @media #{$mobile}{
+    padding-left: 10px;
+  }
 }
 
 .ch-text{
   font-family: $sans-serif;
   font-weight: 600;
 }
+
+.show-for-860{
+  @media (max-width:970px){
+  display:none;
+  }
+}
+
+.hide-for-860{
+  display:none;
+  @media (max-width:970px){
+  display:inline-block;
+  }
+}
+
