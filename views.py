@@ -77,6 +77,6 @@ def recruit():
 def six():
     return render_template('six.html',
         slug="the-pressure",
-        title="",
-        description="",
-        twitter_text="")
+        title="Nation's No. 1 football recruit under pressure",
+        description="The Najee Chronicles: As decision day nears for Antioch's Najee Harris, life becomes more stressful on and off the field.",
+        twitter_text="Top college football recruit Najee Harris' life gets more intense as decision day nears.")
